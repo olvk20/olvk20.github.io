@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #2a2a2a;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+nav {
+    background: #1a1a1a;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+}
+
+.nav-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #90EE90;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo img:hover {
+    transform: scale(1.1);
+}
+
+.nav-logo span {
+    color: #90EE90;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #90EE90;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 2rem 2rem 2rem;
+}
+
+.hero-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid #90EE90;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 30px rgba(144, 238, 144, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hero-image:hover {
+    transform: scale(1.05);
+}
+
+.typewriter {
+    font-size: 3rem;
+    color: #90EE90;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.typewriter-sub {
+    font-size: 1.5rem;
+    color: #b0b0b0;
+    font-family: monospace;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    padding: 15px 40px;
+    background: #90EE90;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(144, 238, 144, 0.3);
+}
+
+.cta-button:hover {
+    background: #7ed97e;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(144, 238, 144, 0.5);
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #90EE90;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 5px solid #90EE90;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    color: #b0b0b0;
+    font-size: 1.1rem;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.stat-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card h3 {
+    color: #90EE90;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+    color: #b0b0b0;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.tech-card {
+    background: #1a1a1a;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.tech-card:hover {
+    border-color: #90EE90;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(144, 238, 144, 0.2);
+}
+
+.tech-card h3 {
+    color: #90EE90;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.tech-card p {
+    color: #b0b0b0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.project-card:hover {
+    border-color: #90EE90;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(144, 238, 144, 0.3);
+}
+
+.project-header {
+    background: linear-gradient(135deg, #90EE90, #7ed97e);
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-header h3 {
+    color: #1a1a1a;
+    font-size: 1.8rem;
+}
+
+.project-body {
+    padding: 1.5rem;
+}
+
+.project-body p {
+    color: #b0b0b0;
+    margin-bottom: 1rem;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.project-link {
+    padding: 10px 20px;
+    background: #90EE90;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    background: #7ed97e;
+}
+
+.contact-content {
+    text-align: center;
+    background: #1a1a1a;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    width: 90px;
+    height: 90px;
+    background: #90EE90;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+ 
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(144, 238, 144, 0.5);
+}
+
+footer {
+    background: #1a1a1a;
+    text-align: center;
+    padding: 2rem;
+    color: #b0b0b0;
+    margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .typewriter {
+        font-size: 2rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+}
