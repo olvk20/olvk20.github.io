@@ -343,4 +343,8 @@ footer {
     .about-stats {
         grid-template-columns: 1fr;
     }
+
+}
+a {
+    color: inherit;
 }
